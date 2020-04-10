@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>用Hexo和NexT构建博客</title>
+    <url>/2020/04/11/%E7%94%A8Hexo%E5%92%8CNexT%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="文档参考"><a href="#文档参考" class="headerlink" title="文档参考"></a>文档参考</h2><ul>
+<li><a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="https://theme-next.org/docs/" target="_blank" rel="noopener">NexT</a></li>
+</ul>
+<h2 id="安装-Hexo-和-NexT"><a href="#安装-Hexo-和-NexT" class="headerlink" title="安装 Hexo 和 NexT"></a>安装 Hexo 和 NexT</h2><ul>
+<li>参考<a href="https://hexo.io/docs/setup" target="_blank" rel="noopener">Hexo Setup</a></li>
+<li>参考<a href="https://theme-next.org/docs/getting-started/installation" target="_blank" rel="noopener">NexT Getting Started</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g<br>hexo init<br>git <span class="hljs-built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next<br></code></pre></td></tr></table></figure>
+
+<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><p>参考<a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">Hexo Configuration</a></p>
+<ul>
+<li><p>修改项目根目录下的<code>_config.yml</code>文件</p>
+</li>
+<li><p>网站信息主要修改 <code>title</code>, <code>subtitle</code>, <code>description</code>, <code>author</code>, <code>timezone</code>, <code>url</code>这几项，其余的稍后修改</p>
+</li>
+<li><p><code>language: zh-CN</code>的支持是由NexT提供的，默认是没有效果的</p>
+</li>
+<li><p><code>theme: next</code>其中<code>next</code>取决于你安装在<code>theme</code>下的目录名</p>
+</li>
+<li><p>若要部署可进行如下配置</p>
+  <figure class="highlight yml"><table><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br><span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br><span class="hljs-attr">repo:</span> <span class="hljs-comment">#Git仓库路径</span><br><span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="配置-NexT"><a href="#配置-NexT" class="headerlink" title="配置 NexT"></a>配置 NexT</h2><p>参考<a href="https://theme-next.org/docs/getting-started/configuration" target="_blank" rel="noopener">NexT Configuration</a></p>
+<ol>
+<li>从<code>theme/next</code>目录下复制一份<code>_config.yml</code>到<code>source/data/next.yml</code>(具体路径取决于你的<code>_config.yml</code>)</li>
+<li>修改<code>next.yml</code>中需要的配置项: 美化相关参考<a href="https://theme-next.org/docs/theme-settings/" target="_blank" rel="noopener">Theme Settings</a>, 第三方服务相关参考<a href="https://theme-next.org/docs/third-party-services/" target="_blank" rel="noopener">Third Party Services</a></li>
+</ol>
+<ul>
+<li>个人建议启用第三方服务中的<code>Math Equations</code>支持以方便书写数学表达式</li>
+</ul>
+<h2 id="测试和部署"><a href="#测试和部署" class="headerlink" title="测试和部署"></a>测试和部署</h2><p>参考<a href="https://theme-next.org/docs/getting-started/deployment" target="_blank" rel="noopener">NexT Deployment</a></p>
+<h3 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h3><ul>
+<li>构建前需要确保至少有一篇Post，否则可能会出现404的情况</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server --debug<br></code></pre></td></tr></table></figure>
+
+<h3 id="手动部署"><a href="#手动部署" class="headerlink" title="手动部署"></a>手动部署</h3><ul>
+<li>需要先确保配置文件已经配置好</li>
+<li>Git部署需要先安装对应的插件<code>npm install hexo-deployer-git</code>，然后和测试时类似</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy<br></code></pre></td></tr></table></figure>
+
+<h3 id="持续集成"><a href="#持续集成" class="headerlink" title="持续集成"></a>持续集成</h3><p>待使用</p>
+<h2 id="使用博客"><a href="#使用博客" class="headerlink" title="使用博客"></a>使用博客</h2><p>在上面进行配置的过程中应当已经学会简单使用Hexo了，下面算是一些总结的部分</p>
+<h3 id="新建Post"><a href="#新建Post" class="headerlink" title="新建Post"></a>新建Post</h3><p><code>hexo new &lt;title&gt;</code>或<code>hexo new post &lt;title&gt;</code>会创建文件于<code>source/_post/&lt;title&gt;.md</code>，其中最开始的内容应当类似如下</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hexo+NexT构建博客</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-04</span><span class="hljs-number">-11</span> <span class="hljs-number">03</span><span class="hljs-string">:23:32</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">[Hexo,</span> <span class="hljs-string">NexT]</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+
+<p>此外，如果有相关配置的话，可以增加<code>categories</code>,<code>comments</code>等项以设置对应配置的属性</p>
+<p>然后写下你要写的内容</p>
+<h3 id="提交Post"><a href="#提交Post" class="headerlink" title="提交Post"></a>提交Post</h3><p>如果是手动部署就直接执行对应的命令行</p>
+<p>如果是持续集成一般只要提交commit即可</p>
+<ul>
+<li>在提交之前可以先进行本地测试来预览一下</li>
+</ul>
+<h2 id="几个坑"><a href="#几个坑" class="headerlink" title="几个坑"></a>几个坑</h2><ul>
+<li>没有Post的时候访问根页面时404</li>
+<li>生成Post时出现</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">ERROR Render HTML failed: xxx/index.html<br>TypeError: Cannot <span class="hljs-built_in">read</span> property <span class="hljs-string">'replace'</span> of null<br></code></pre></td></tr></table></figure>
+
+<p>参考<a href="https://github.com/hexojs/hexo/issues/3859" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/3859</a></p>
+<p>还有可能是在配置文件中把一些功能打开但是没用安装对应的依赖导致的(其他报错也可能是这个原因)</p>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+</search>
