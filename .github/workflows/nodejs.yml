@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
+    - run: npm install
     - name: Clean and Build
       run: |
         ./node_modules/.bin/hexo clean
