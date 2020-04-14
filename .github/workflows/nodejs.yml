@@ -20,6 +20,6 @@ jobs:
       uses: renzhaosy/hexo-deploy-action@master
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_REPOSITORY: ${{ GITHUB_REPOSITORY }}
+        PUBLISH_REPOSITORY: ${{ github.repository }}
         BRANCH: master
         PUBLISH_DIR: ./public
