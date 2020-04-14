@@ -9,28 +9,17 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
+    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - name: Clean and Build
-      run: |
-        ./node_modules/.bin/hexo clean
-        ./node_modules/.bin/hexo generate
-        cd ./public
-    - name: Config git
-      run: |
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git remote add origin "https://${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+    - run: npm ci
+
+    - name: Build and Deploy
+      uses: renzhaosy/hexo-deploy-action@master
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Deploy
-      run: |
-        git log -1
-        git checkout master
-        git add --all
-        git commit --allow-empty -m "Auto deploy by ${GITHUB_SHA}"
-        git push origin master --force
-
+        PUBLISH_REPOSITORY: ${{ GITHUB_RESREPOSITORY }}
+        BRANCH: master
+        PUBLISH_DIR: ./public
