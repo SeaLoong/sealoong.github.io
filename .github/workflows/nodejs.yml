@@ -9,7 +9,6 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -22,7 +21,6 @@ jobs:
         cd ./public
     - name: Config git
       run: |
-        git log -1
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git remote add origin "https://${PERSONAL_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
@@ -30,6 +28,7 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Deploy
       run: |
+        git log -1
         git checkout master
         git add --all
         git commit --allow-empty -m "Auto deploy by ${GITHUB_SHA}"
