@@ -15,12 +15,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - name: Config git
-      run: |
-        git config --global user.name  "SeaLoong"
-        git config --global user.email "sealoong@mcshiyi.com"
     - name: Clean and Build
       run: |
         ./node_modules/.bin/hexo clean
         ./node_modules/.bin/hexo generate
-        ./node_modules/.bin/hexo deploy
+        cd ./public
+    - name: Config git and Deploy
+      run: |
+        git log -1
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git remote add origin "https://x-access-token:${secrets.GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        git checkout master
+        git add --all
+        git commit --allow-empty -m "Auto deploy by ${GITHUB_SHA}"
+        git push origin master --force
