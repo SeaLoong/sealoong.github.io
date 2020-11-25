@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Hexo Auto Deploy
 on:
   push:
     branches: [ source ]
@@ -17,7 +17,7 @@ jobs:
     - run: npm ci
 
     - name: Build and Deploy
-      uses: renzhaosy/hexo-deploy-action@master
+      uses: SeaLoong/hexo-deploy-action@master
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_REPOSITORY: ${{ github.repository }}
