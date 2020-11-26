@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sealoong.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":10,"unescape":true,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="想到什么写什么">
+<meta property="og:type" content="website">
+<meta property="og:title" content="随手记">
+<meta property="og:url" content="https://sealoong.github.io/index.html">
+<meta property="og:site_name" content="随手记">
+<meta property="og:description" content="想到什么写什么">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="SeaLoong">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://sealoong.github.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>随手记</title>
+  
+
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0bf343a3e856a8ced92390c72ad00fc5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">随手记</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">8</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">3</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sealoong.github.io/2020/11/24/%E8%AE%B0%E5%A4%9A%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E5%92%8C%E5%9D%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="SeaLoong">
+      <meta itemprop="description" content="想到什么写什么">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="随手记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/24/%E8%AE%B0%E5%A4%9A%E7%A7%8D%E8%BF%9C%E7%A8%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E5%92%8C%E5%9D%91/" class="post-title-link" itemprop="url">记多种远程开发环境搭建过程和坑</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-11-24 22:35:08" itemprop="dateCreated datePublished" datetime="2020-11-24T22:35:08+08:00">2020-11-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-26 13:19:53" itemprop="dateModified" datetime="2020-11-26T13:19:53+08:00">2020-11-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>远程机器环境：Debian 10.6</li>
+</ul>
+<h2 id="Visual-Studio-Code-Remote-SSH"><a href="#Visual-Studio-Code-Remote-SSH" class="headerlink" title="Visual Studio Code - Remote SSH"></a>Visual Studio Code - Remote SSH</h2><h3 id="远程机器ssh服务端搭建"><a href="#远程机器ssh服务端搭建" class="headerlink" title="远程机器ssh服务端搭建"></a>远程机器ssh服务端搭建</h3><p>参考：<a href="https://www.cnblogs.com/yinheyi/p/6266748.html" target="_blank" rel="noopener">debian系统下安装ssh服务</a>，<a href="https://man.openbsd.org/sshd_config.5" target="_blank" rel="noopener">sshd_config</a></p>
+<ol>
+<li><p>安装ssh服务端</p>
+<blockquote>
+<p><code>apt-get install openssh-server</code></p>
+</blockquote>
+</li>
+<li><p>配置ssh(配置文件<code>/etc/ssh/sshd_config</code>)</p>
+</li>
+<li><p>重启ssh服务</p>
+<blockquote>
+<p><code>service ssh restart</code></p>
+</blockquote>
+</li>
+</ol>
+<h3 id="使用Remote-SSH插件连接远程机器"><a href="#使用Remote-SSH插件连接远程机器" class="headerlink" title="使用Remote SSH插件连接远程机器"></a>使用Remote SSH插件连接远程机器</h3><ul>
+<li>先确保本地机器有ssh客户端，在使用之前可以在命令行测试一下连接</li>
+</ul>
+<ol>
+<li><p>安装Remote SSH插件</p>
+</li>
+<li><p>修改配置文件</p>
+<p> <img src="https://i.loli.net/2020/11/24/EPsWLHvX7V9BKIY.png" alt="1.png"></p>
+<p> <img src="https://i.loli.net/2020/11/24/QtqzE7KPCGx2rS9.png" alt="2.png"></p>
+<p> 参考<a href="https://linux.die.net/man/5/ssh_config" target="_blank" rel="noopener">ssh_config</a></p>
+</li>
+<li><p>连接到远程机器，远程机器将会自动安装 <code>VSCode-Server</code>，安装目录为 <code>~/.vscode-server</code></p>
+</li>
+</ol>
+<h3 id="遇到的坑-1"><a href="#遇到的坑-1" class="headerlink" title="遇到的坑#1"></a>遇到的坑#1</h3><h4 id="Bad-owner-or-permissions-on-C-Users-USER-ssh-config"><a href="#Bad-owner-or-permissions-on-C-Users-USER-ssh-config" class="headerlink" title="Bad owner or permissions on C:\Users\USER/.ssh/config"></a>Bad owner or permissions on C:\Users\USER/.ssh/config</h4><p><a href="https://github.com/cmderdev/cmder/issues/1763" target="_blank" rel="noopener">Github Issue</a></p>
+<p><a href="https://github.com/cmderdev/cmder/issues/1763#issuecomment-558658298" target="_blank" rel="noopener">该 Issue 下的一个解决方法</a></p>
+<ul>
+<li><p>将配置文件路径写到插件设置中即可</p>
+<p>  <img src="https://i.loli.net/2020/11/25/5iCNxKks3pbV9rM.png" alt="3.png"></p>
+</li>
+</ul>
+<h2 id="Docker部署Code-Server"><a href="#Docker部署Code-Server" class="headerlink" title="Docker部署Code-Server"></a>Docker部署Code-Server</h2><p>安装方法较多，这里使用 Docker CLI 进行安装，一个脚本直接部署</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br>docker run -itd --rm --name code-server \<br>  -p 8080:8080 \<br>  -v <span class="hljs-string">"<span class="hljs-variable">$HOME</span>/project:/root/project"</span> \<br>  -v <span class="hljs-string">"<span class="hljs-variable">$HOME</span>/.vscode-server/extensions:/root/.local/share/code-server/extensions"</span> \<br>  -u <span class="hljs-string">"root"</span> \<br>  -e <span class="hljs-string">"PASSWORD=yourpassword"</span> \<br>  codercom/code-server:latest \<br>  /bin/bash \<br>&amp;&amp;  \<br>docker <span class="hljs-built_in">exec</span> code-server \<br>  code-server \<br>  --<span class="hljs-built_in">bind</span>-addr 0.0.0.0:8080 \<br>  --auth password<br></code></pre></td></tr></table></figure>
+
+<h3 id="部分参数原因解释"><a href="#部分参数原因解释" class="headerlink" title="部分参数原因解释"></a>部分参数原因解释</h3><ul>
+<li><code>-itd</code><blockquote>
+<p>主要说明 <code>-d</code>，因为容器需要后台运行</p>
+</blockquote>
+</li>
+<li><code>--rm</code><blockquote>
+<p>在容器退出后删除容器，由于需要保存的文件目录(如代码)等已经映射到主机了，不需要担心文件保存的问题</p>
+</blockquote>
+</li>
+<li><code>-v</code><blockquote>
+<p>两个 <code>-v</code> 参数分别映射项目目录和上文 <code>VSCode-Server</code> 中安装的插件，这样可以使得插件能够一致(此处忽略兼容性问题)。注意如果用户不同， <code>-v</code> 映射的路径是不一样的</p>
+</blockquote>
+</li>
+<li><code>-u</code><blockquote>
+<p>这里直接使用 <code>root</code> 权限，由于 <code>.local/</code> 目录是由 <code>root</code> 所有，而插件目录 <code>extensions</code> 在其下，因此若想映射主机插件文件夹到此处就必须要 <code>root</code> ，使用其他用户会遇到权限问题。使用 <code>root</code> 可能导致的一个问题是：<code>project</code> 目录及其文件将由 <code>root</code> 所有，主机也需要 <code>root</code> 才能更改文件</p>
+</blockquote>
+</li>
+<li><code>-e PASSWORD=yourpassword</code><blockquote>
+<p>由于 <code>code-server</code> 只允许在环境变量或配置文件中设置密码，不能直接传 <code>--password</code> 参数设置密码</p>
+</blockquote>
+</li>
+<li><code>--bind-addr</code><blockquote>
+<p>监听地址及端口，注意要和容器开放的端口一致</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="使用效果"><a href="#使用效果" class="headerlink" title="使用效果"></a>使用效果</h3><ul>
+<li><p>插件一致效果</p>
+<p>  <img src="https://i.loli.net/2020/11/26/GjQEAspqgzotZeK.png" alt="4.png"></p>
+</li>
+<li><p>项目路径一致效果</p>
+<p>  <img src="https://i.loli.net/2020/11/26/QNB2AL56TF9Yvto.png" alt="5.png"></p>
+</li>
+</ul>
+<h3 id="遇到的坑-2"><a href="#遇到的坑-2" class="headerlink" title="遇到的坑#2"></a>遇到的坑#2</h3><blockquote>
+<p>权限问题均在终端有显示 <br>部分问题在上文参数解释中已说明</p>
+</blockquote>
+<ul>
+<li><p>网页访问返回 500</p>
+<p>  权限问题</p>
+</li>
+<li><p>插件没有和主机上的插件一致</p>
+<p>  1.权限问题</p>
+<p>  2.文件夹映射不正确</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sealoong.github.io/2020/04/21/%E6%B2%B9%E7%8C%B4%E7%94%A8%E6%88%B7%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="SeaLoong">
+      <meta itemprop="description" content="想到什么写什么">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="随手记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/21/%E6%B2%B9%E7%8C%B4%E7%94%A8%E6%88%B7%E8%84%9A%E6%9C%AC%E5%BC%80%E5%8F%91%E5%BF%83%E5%BE%97/" class="post-title-link" itemprop="url">油猴用户脚本开发心得</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-21 08:49:00" itemprop="dateCreated datePublished" datetime="2020-04-21T08:49:00+08:00">2020-04-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-26 13:19:53" itemprop="dateModified" datetime="2020-11-26T13:19:53+08:00">2020-11-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="文档参考"><a href="#文档参考" class="headerlink" title="文档参考"></a>文档参考</h2><ul>
+<li><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener">MDN Web Docs</a></li>
+<li><a href="https://www.tampermonkey.net/documentation.php" target="_blank" rel="noopener">Tampermonkey Doc</a></li>
+<li><a href="https://wiki.greasespot.net/Greasemonkey_Manual:API" target="_blank" rel="noopener">Greasemonkey_Manual:API</a></li>
+</ul>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ul>
+<li>以下内容均为在特定时间特定环境的个人经验之谈，可能会在以后或不同环境中不适用。</li>
+</ul>
+<h2 id="Greasemonkey-Tampermonkey-API相关"><a href="#Greasemonkey-Tampermonkey-API相关" class="headerlink" title="Greasemonkey/Tampermonkey API相关"></a>Greasemonkey/Tampermonkey API相关</h2><ul>
+<li>自某个版本开始有了 <code>GM.*</code> 形式的API，可以用于取代旧版本的 <code>GM_*</code> 形式的API。<ul>
+<li><code>GM.*</code> 的API函数有些是异步函数，具体请查看文档，而 <code>GM_*</code> 的API函数是同步的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="unsafeWindow"><a href="#unsafeWindow" class="headerlink" title="unsafeWindow"></a><a href="https://wiki.greasespot.net/UnsafeWindow" target="_blank" rel="noopener">unsafeWindow</a></h3><ul>
+<li>在声明了 <code>@grant unsafeWindow</code> 之后，脚本上下文中的 <code>window</code> 会被替换成一个由插件提供的”沙箱window”。</li>
+<li>在沙箱环境下，<code>Worker</code> 以及一些API可能会无法工作。</li>
+<li>可以使用 <code>window = unsafeWindow;</code> 的方式脱离沙箱环境，但要保证这行在需要脱离沙箱的代码之前。另外也可以保留一个原来的 <code>window</code> 的引用以备用。</li>
+</ul>
+<h2 id="ECMAScript-相关"><a href="#ECMAScript-相关" class="headerlink" title="ECMAScript 相关"></a>ECMAScript 相关</h2><ul>
+<li><a href="https://w3c.github.io/workers/" target="_blank" rel="noopener">W3C Workers</a></li>
+</ul>
+<h3 id="Worker-和-DedicatedWorkerGlobalScope"><a href="#Worker-和-DedicatedWorkerGlobalScope" class="headerlink" title="Worker 和 DedicatedWorkerGlobalScope"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Worker" target="_blank" rel="noopener">Worker</a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/DedicatedWorkerGlobalScope" target="_blank" rel="noopener">DedicatedWorkerGlobalScope</a></h3><ul>
+<li><p><code>Worker</code> 可以通过如下方法来实现<em>从代码直接加载</em>而不用URL以实现跨域加载 <code>Worker</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> content = <span class="hljs-string">'Worker中要执行的代码'</span>;<br><span class="hljs-keyword">const</span> url = URL.createObjectURL(<span class="hljs-keyword">new</span> Blob([content], &#123; <span class="hljs-attr">type</span>: <span class="hljs-string">'text/javascript'</span> &#125;));<br><span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> Worker(url);<br><span class="hljs-comment">// ...</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>参考<a href="https://stackoverflow.com/questions/5408406/web-workers-without-a-separate-javascript-file" target="_blank" rel="noopener">Web workers without a separate Javascript file?</a></p>
+</li>
+<li><p>还有一种可行的从跨域URL加载的方式，简单说就是在上述方法中使用 <code>importScripts</code> 加载启用CORS的域的代码</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">const</span> URL = <span class="hljs-string">'xxxxxx'</span>;<br><span class="hljs-keyword">const</span> content = <span class="hljs-string">`importScripts(<span class="hljs-subst">$&#123;URL&#125;</span>);`</span>;<br><span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> Worker(URL.createObjectURL(<span class="hljs-keyword">new</span> Blob([content], &#123; <span class="hljs-attr">type</span>: <span class="hljs-string">'text/javascript'</span> &#125;)));<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>参考<a href="https://stackoverflow.com/questions/20410119/cross-domain-web-worker" target="_blank" rel="noopener">Cross Domain Web Worker?</a></li>
+<li>另一种可能的方式<a href="https://stackoverflow.com/questions/21913673/execute-web-worker-from-different-origin" target="_blank" rel="noopener">Execute web worker from different origin</a></li>
+</ul>
+<h3 id="SharedWorker-和-SharedWorkerGlobalScope"><a href="#SharedWorker-和-SharedWorkerGlobalScope" class="headerlink" title="SharedWorker 和 SharedWorkerGlobalScope"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/SharedWorker" target="_blank" rel="noopener">SharedWorker</a> 和 <a href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorkerGlobalScope" target="_blank" rel="noopener">SharedWorkerGlobalScope</a></h3><ul>
+<li><code>SharedWorker</code> 在通过上述方式使用时没有效果(但这种方法不会提示错误，是否真的不可用还有待研究)，由于同源策略也无法执行你自己的脚本。目前还没有找到一个合理有效的方法在用户脚本中使用 <code>SharedWorker</code></li>
+<li>参考<a href="https://stackoverflow.com/questions/38810002/how-can-i-load-a-shared-web-worker-with-a-user-script" target="_blank" rel="noopener">How can I load a shared web worker with a user-script?</a></li>
+<li>注：上述页面中的部分答案可能有用，但这不应该是 <code>SharedWorker</code> 本身应用的场景</li>
+</ul>
+<h3 id="ServiceWorker-和-ServiceWorkerGlobalScope"><a href="#ServiceWorker-和-ServiceWorkerGlobalScope" class="headerlink" title="ServiceWorker 和 ServiceWorkerGlobalScope"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/ServiceWorker" target="_blank" rel="noopener">ServiceWorker</a> 和 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/ServiceWorkerGlobalScope" target="_blank" rel="noopener">ServiceWorkerGlobalScope</a></h3><ul>
+<li><code>ServiceWorker</code> 同 <code>SharedWorker</code> 没有合理有效的方法在用户脚本中使用，但使用上述方法时均直接提示错误，因此目前这些方法对 <code>ServiceWorker</code> 均不可用</li>
+</ul>
+<h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><h3 id="从URL中加载的方式-import-export"><a href="#从URL中加载的方式-import-export" class="headerlink" title="从URL中加载的方式 import / export"></a>从URL中加载的方式 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/import" target="_blank" rel="noopener">import</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/export" target="_blank" rel="noopener">export</a></h3><ul>
+<li><p>从某个版本开始，各大浏览器实现了动态<code>import</code>，因此可以通过这种方式在用户脚本中从URL加载<em>模块(Module)</em></p>
+</li>
+<li><p>示例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 模块中的代码</span><br><span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span> (<span class="hljs-params"></span>) </span>&#123; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'here is function f'</span>); &#125;<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> k = <span class="hljs-number">1</span>;<br><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span> (<span class="hljs-params"></span>) </span>&#123; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'here is function func'</span>); &#125;<br><br><span class="hljs-comment">// 用户脚本或其他地方的代码，注意动态import的使用方式和静态import的使用方式有所不同</span><br><span class="hljs-keyword">const</span> mod = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(URL);<br><span class="hljs-built_in">console</span>.log(mod.f, mod.f());<br><span class="hljs-built_in">console</span>.log(mod.k);<br><span class="hljs-built_in">console</span>.log(mod.default); <span class="hljs-comment">// 注意这里，default指代的是用export default导出的东西</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>在 <code>Web Worker</code> 中暂时无法使用<code>import</code>，参考<a href="https://stackoverflow.com/questions/44118600/web-workers-how-to-import-modules" target="_blank" rel="noopener">Web Workers - How To Import Modules</a></p>
+<ul>
+<li><em>Chrome 80</em> 修复了这个bug</li>
+</ul>
+</li>
+</ul>
+<h3 id="直接执行代码的方式-eval-Function-AsyncFunction"><a href="#直接执行代码的方式-eval-Function-AsyncFunction" class="headerlink" title="直接执行代码的方式 eval / Function / AsyncFunction"></a>直接执行代码的方式 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval" target="_blank" rel="noopener">eval</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" rel="noopener">Function</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction" target="_blank" rel="noopener">AsyncFunction</a></h3><ul>
+<li>如果想要异步加载，需要保证加载过程的代码中的每个异步函数都有正确地<code>await</code>，否则可能导致加载顺序不一致</li>
+<li>关于<code>eval</code>和<code>Function</code>性能问题：在 <em>Chrome</em> 中测试得到 <code>eval</code>有最高的效率；在 <em>Firefox</em> 中测试得到 <code>Function</code> 更快。此外，在 <em>Chrome</em> 中的执行速度比 <em>Firefox</em> 整体快了数倍</li>
+</ul>
+<h2 id="网页请求相关"><a href="#网页请求相关" class="headerlink" title="网页请求相关"></a>网页请求相关</h2><h3 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS" target="_blank" rel="noopener">CORS</a></h3><ul>
+<li><p>在用户脚本中跨域获取HTTP请求<em>自己的文件</em>可以通过脚本的<code>@resource</code>实现，或把文件挂在代码托管的网站上，因为这些网站通常是默认开启CORS的</p>
+</li>
+<li><p>如果需要请求<em>他人的文件</em>(如调用API等)可以使用<a href="https://wiki.greasespot.net/GM.xmlHttpRequest" target="_blank" rel="noopener">GM.xmlHttpRequest</a></p>
+</li>
+<li><p>CORS对<code>Worker</code>/<code>SharedWorker</code>/<code>ServiceWorker</code>都不能产生效果，因此你不能通过如下方式从跨域URL加载</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> blockedWorker = <span class="hljs-keyword">new</span> Worker(<span class="hljs-string">"https://not-example.com/"</span>);<br>blockedWorker = <span class="hljs-keyword">new</span> SharedWorker(<span class="hljs-string">"https://not-example.com/"</span>);<br>navigator.serviceWorker.register(<span class="hljs-string">'https://not-example.com/sw.js'</span>);<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>参考<a href="https://stackoverflow.com/questions/60766732/why-can-i-fetch-this-cross-origin-file-but-i-cant-create-a-worker-from-it" target="_blank" rel="noopener">Why can I fetch this Cross origin file but I can’t create a Worker from it?</a></p>
+</li>
+<li><p><code>importScripts</code>受CORS控制，因此可以用这个方式解决上述的问题，见上文</p>
+</li>
+</ul>
+<h3 id="Content-Security-Policy"><a href="#Content-Security-Policy" class="headerlink" title="Content-Security-Policy"></a><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy" target="_blank" rel="noopener">Content-Security-Policy</a></h3><ul>
+<li>如果网站启用CSP并且作出限制，用户脚本基本上没法做被限制的操作，不过我目前没有遇到</li>
+</ul>
+<h3 id="GM-xmlHttpRequest-XMLHttpRequest-Fetch-API-对比"><a href="#GM-xmlHttpRequest-XMLHttpRequest-Fetch-API-对比" class="headerlink" title="GM.xmlHttpRequest / XMLHttpRequest / Fetch_API 对比"></a><a href="https://wiki.greasespot.net/GM.xmlHttpRequest" target="_blank" rel="noopener">GM.xmlHttpRequest</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/XMLHttpRequest" target="_blank" rel="noopener">XMLHttpRequest</a> / <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API" target="_blank" rel="noopener">Fetch_API</a> 对比</h3><ul>
+<li>参考<a href="https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name" target="_blank" rel="noopener">Forbidden_header_name</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">特性</th>
+<th align="center"><code>GM.xmlHttpRequest</code></th>
+<th align="center"><code>XMLHttpRequest</code></th>
+<th align="center"><code>Fetch_API</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">跨域请求</td>
+<td align="center">油猴控制</td>
+<td align="center">CORS控制</td>
+<td align="center">CORS控制</td>
+</tr>
+<tr>
+<td align="center">修改<code>User-Agent</code></td>
+<td align="center"><strong>有效</strong></td>
+<td align="center">无效</td>
+<td align="center">无效</td>
+</tr>
+<tr>
+<td align="center">修改<code>Host</code></td>
+<td align="center"><strong>有效</strong></td>
+<td align="center">无效</td>
+<td align="center">无效</td>
+</tr>
+<tr>
+<td align="center">修改<code>Origin</code></td>
+<td align="center"><strong>有效</strong></td>
+<td align="center">无效</td>
+<td align="center">无效</td>
+</tr>
+<tr>
+<td align="center">修改<code>Referer</code></td>
+<td align="center"><strong>有效</strong></td>
+<td align="center">无效</td>
+<td align="center"><strong><em>受限</em></strong></td>
+</tr>
+<tr>
+<td align="center">修改<code>Cookie</code></td>
+<td align="center"><strong>有效</strong></td>
+<td align="center">无效</td>
+<td align="center">无效</td>
+</tr>
+<tr>
+<td align="center">修改<code>Sec-</code></td>
+<td align="center"><strong>有效</strong></td>
+<td align="center">无效</td>
+<td align="center">无效</td>
+</tr>
+<tr>
+<td align="center"><code>HTTP 2</code></td>
+<td align="center">不支持</td>
+<td align="center"><strong>支持</strong></td>
+<td align="center"><strong>支持</strong></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>此外在使用 <code>GM.xmlHttpRequest</code> 的时候要自行填写所有需要的 Header，这可能会带来麻烦和其他风险</p>
+</li>
+<li><p>表中是否有效的判断是指是否能通过给定的API来打到对应的目的</p>
+</li>
+<li><p><code>Fetch_API</code> 中的 <strong><em>受限</em></strong> 是指可以修改为同页面下的任意URL</p>
+<ul>
+<li>示例</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 假定在 http://example.com/demo 下进行的请求</span><br>fetch(<span class="hljs-string">'http://example.com/demo/api'</span>, &#123;<br>  method: <span class="hljs-string">'GET'</span>,<br>  referrerPolicy: <span class="hljs-string">'unsafe-url'</span>,<br>  referrer: <span class="hljs-string">'http://cross-origin.com/balabala'</span> <span class="hljs-comment">// 在这种情况下，设置的 referrer 无效，最终的 Referrer 不变</span><br>  referrer: <span class="hljs-string">'ThisIsReferrer'</span> <span class="hljs-comment">// 在这种情况下，最终的 Referrer 为 http://example.com/demo/ThisIsReferrer</span><br>&#125;);<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>测试环境为 <em>Chrome 80</em> 下的默认设置，<em>TamperMonkey 4.9</em></p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sealoong.github.io/2020/04/10/%E7%94%A8Hexo%E5%92%8CNexT%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="SeaLoong">
+      <meta itemprop="description" content="想到什么写什么">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="随手记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/10/%E7%94%A8Hexo%E5%92%8CNexT%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">用Hexo和NexT构建博客</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-11 03:23:32" itemprop="dateCreated datePublished" datetime="2020-04-11T03:23:32+08:00">2020-04-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-26 13:19:53" itemprop="dateModified" datetime="2020-11-26T13:19:53+08:00">2020-11-26</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="文档参考"><a href="#文档参考" class="headerlink" title="文档参考"></a>文档参考</h2><ul>
+<li><a href="https://hexo.io/docs/" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="https://theme-next.org/docs/" target="_blank" rel="noopener">NexT</a></li>
+</ul>
+<h2 id="安装-Hexo-和-NexT"><a href="#安装-Hexo-和-NexT" class="headerlink" title="安装 Hexo 和 NexT"></a>安装 Hexo 和 NexT</h2><ul>
+<li>参考<a href="https://hexo.io/docs/setup" target="_blank" rel="noopener">Hexo Setup</a></li>
+<li>参考<a href="https://theme-next.org/docs/getting-started/installation" target="_blank" rel="noopener">NexT Getting Started</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g<br>hexo init<br>git <span class="hljs-built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next<br></code></pre></td></tr></table></figure>
+
+<h2 id="配置-Hexo"><a href="#配置-Hexo" class="headerlink" title="配置 Hexo"></a>配置 Hexo</h2><p>参考<a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">Hexo Configuration</a></p>
+<ul>
+<li>修改项目根目录下的<code>_config.yml</code>文件</li>
+<li>网站信息主要修改 <code>title</code>, <code>subtitle</code>, <code>description</code>, <code>author</code>, <code>timezone</code>, <code>url</code>这几项，其余的稍后修改</li>
+<li><code>language: zh-CN</code>的支持是由NexT提供的，默认是没有效果的</li>
+<li><code>theme: next</code>其中<code>next</code>取决于你安装在<code>theme</code>下的目录名</li>
+</ul>
+<h2 id="配置-NexT"><a href="#配置-NexT" class="headerlink" title="配置 NexT"></a>配置 NexT</h2><p>参考<a href="https://theme-next.org/docs/getting-started/configuration" target="_blank" rel="noopener">NexT Configuration</a></p>
+<ol>
+<li>从<code>theme/next</code>目录下复制一份<code>_config.yml</code>到<code>source/data/next.yml</code>(具体路径取决于你的<code>_config.yml</code>)</li>
+<li>修改<code>next.yml</code>中需要的配置项: 美化相关参考<a href="https://theme-next.org/docs/theme-settings/" target="_blank" rel="noopener">Theme Settings</a>, 第三方服务相关参考<a href="https://theme-next.org/docs/third-party-services/" target="_blank" rel="noopener">Third Party Services</a></li>
+</ol>
+<ul>
+<li>个人建议启用第三方服务中的<code>Math Equations</code>支持以方便书写数学表达式</li>
+</ul>
+<h2 id="测试和部署"><a href="#测试和部署" class="headerlink" title="测试和部署"></a>测试和部署</h2><p>参考<a href="https://theme-next.org/docs/getting-started/deployment" target="_blank" rel="noopener">NexT Deployment</a></p>
+<h3 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h3><ul>
+<li>构建前需要确保至少有一篇Post，否则可能会出现404的情况</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server --debug<br></code></pre></td></tr></table></figure>
+
+<h3 id="手动部署"><a href="#手动部署" class="headerlink" title="手动部署"></a>手动部署</h3><ul>
+<li><p>在配置文件 <code>_config.yml</code> 的最后加入以下行</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-comment"># Git仓库路径</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>Git部署需要先安装对应的插件<code>npm install hexo-deployer-git</code>，然后和测试时类似</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy<br></code></pre></td></tr></table></figure>
+
+<h3 id="持续集成"><a href="#持续集成" class="headerlink" title="持续集成"></a>持续集成</h3><p>参考<a href="https://help.github.com/cn/actions" target="_blank" rel="noopener">Github Action Documentation</a></p>
+<ul>
+<li><p>页面源代码会被公开</p>
+</li>
+<li><p>本方法实现的持续集成实际上就是让代码托管帮我们执行上述 <code>手动部署</code> 的过程, 因此需要先配置手动部署的文件</p>
+</li>
+<li><p>仓库下需要有两个 branch 。其中 <code>master</code> 分支是放生成后的静态页面, 另一个分支(<code>source</code>)放你的源码</p>
+</li>
+<li><p>在 <code>source</code> 分支根目录下创建 <code>.github/workflows/nodejs.yml</code> 文件, 内容如下</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">name:</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">Auto</span> <span class="hljs-string">Deploy</span><br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">push:</span><br>    <span class="hljs-attr">branches:</span> <span class="hljs-string">[</span> <span class="hljs-string">source</span> <span class="hljs-string">]</span><br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">build:</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">strategy:</span><br>      <span class="hljs-attr">matrix:</span><br>        <span class="hljs-attr">node-version:</span> <span class="hljs-string">[12.x]</span><br>    <span class="hljs-attr">steps:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Use</span> <span class="hljs-string">Node.js</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">matrix.node-version</span> <span class="hljs-string">&#125;&#125;</span><br>      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v1</span><br>      <span class="hljs-attr">with:</span><br>        <span class="hljs-attr">node-version:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">matrix.node-version</span> <span class="hljs-string">&#125;&#125;</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">npm</span> <span class="hljs-string">ci</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Build</span> <span class="hljs-string">and</span> <span class="hljs-string">Deploy</span><br>      <span class="hljs-attr">uses:</span> <span class="hljs-string">SeaLoong/hexo-deploy-action@master</span><br>      <span class="hljs-attr">env:</span><br>        <span class="hljs-attr">PERSONAL_TOKEN:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.GITHUB_TOKEN</span> <span class="hljs-string">&#125;&#125;</span><br>        <span class="hljs-attr">PUBLISH_REPOSITORY:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">github.repository</span> <span class="hljs-string">&#125;&#125;</span><br>        <span class="hljs-attr">BRANCH:</span> <span class="hljs-string">master</span><br>        <span class="hljs-attr">PUBLISH_DIR:</span> <span class="hljs-string">./public</span><br></code></pre></td></tr></table></figure>
+</li>
+<li><p>然后把文件提交到Github仓库即可</p>
+</li>
+</ul>
+<h2 id="使用博客"><a href="#使用博客" class="headerlink" title="使用博客"></a>使用博客</h2><p>在上面进行配置的过程中应当已经学会简单使用Hexo了，下面算是一些总结的部分</p>
+<h3 id="新建Post"><a href="#新建Post" class="headerlink" title="新建Post"></a>新建Post</h3><p><code>hexo new &lt;title&gt;</code>或<code>hexo new post &lt;title&gt;</code>会创建文件于<code>source/_post/&lt;title&gt;.md</code>，其中最开始的内容应当类似如下</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hexo+NexT构建博客</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-04</span><span class="hljs-number">-11</span> <span class="hljs-number">03</span><span class="hljs-string">:23:32</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">[Hexo,</span> <span class="hljs-string">NexT]</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+
+<p>此外，如果有相关配置的话，可以增加<code>categories</code>,<code>comments</code>等项以设置对应配置的属性</p>
+<p>然后写下你要写的内容</p>
+<h3 id="提交Post"><a href="#提交Post" class="headerlink" title="提交Post"></a>提交Post</h3><p>如果是手动部署就直接执行对应的命令行</p>
+<p>如果是持续集成一般只要提交commit即可</p>
+<ul>
+<li>在提交之前可以先进行本地测试来预览一下</li>
+</ul>
+<h2 id="几个坑"><a href="#几个坑" class="headerlink" title="几个坑"></a>几个坑</h2><ul>
+<li>没有Post的时候访问根页面时404</li>
+<li>生成Post时出现</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ERROR Render HTML failed: xxx/index.html<br>TypeError: Cannot <span class="hljs-built_in">read</span> property <span class="hljs-string">'replace'</span> of null<br></code></pre></td></tr></table></figure>
+
+<p>参考<a href="https://github.com/hexojs/hexo/issues/3859" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/3859</a></p>
+<p>还有可能是在配置文件中把一些功能打开但是没用安装对应的依赖导致的(其他报错也可能是这个原因)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SeaLoong"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">SeaLoong</p>
+  <div class="site-description" itemprop="description">想到什么写什么</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/SeaLoong" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;SeaLoong" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SeaLoong</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+  
+
+    </div>
+</body>
+</html>
